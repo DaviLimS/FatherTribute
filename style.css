@@ -86,9 +86,10 @@ body.light1 {
 }
 
 #Standard {
-    height: 50vh;
-    width: 100vw;
+    max-height: 50vh;
+    max-width: 100vw;
     margin-top: 5vw;
+    overflow-y: hidden;
     font-family: 'Borel', cursive;
     font-weight: bold;
     display: flex;
@@ -217,15 +218,28 @@ img {
 .heart {
     width: 400px;
     height: auto;
-}
-
-.heart:hover {
-    width: 420px;
-    height: auto;
+    margin-left: 0;
 }
 
 .jujube1 {
     cursor: pointer;
     border: none;
     background-color: none;
+}
+
+.divFooter {
+    margin: 30px;
+}
+
+.icons {
+    border-radius: 0;
+    width: 40px;
+    height: auto;
+    user-select: none;
+    cursor: pointer;
+}
+
+.footer {
+    max-width: 100vw;
+    max-height: auto;
 }

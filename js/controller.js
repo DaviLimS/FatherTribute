@@ -1,6 +1,10 @@
 let modeButton = document.getElementById("lightDark");
 let body = document.body;
 let modeTest;
+let instaButton = document.getElementById("instagram");
+let githubButton = document.getElementById("github");
+let twiterButton = document.getElementById("twitter");
+let linkedinButton = document.getElementById("linkedin");
 
 function toggle() {
     if(body.classList.contains("dark1")) {
@@ -18,8 +22,28 @@ function toggle() {
     }
 }
 
-modeButton.addEventListener("click", toggle);
-
 function button() {
     alert("Eu te amo!!!!!!!!!!!!!!!!!");
 }
+
+function openInstagram() {
+    window.open("https://www.instagram.com/_davi.lim_/")
+}
+
+function openGithub() {
+    window.open("https://github.com/DaviLimS");
+}
+
+function openTwitter() {
+    window.open("https://twitter.com/Blwkz1");
+}
+
+function openLinkedin() {
+    alert("Estou pensando se crio ou não uma conta lá");
+}
+
+modeButton.addEventListener("click", toggle);
+twiterButton.addEventListener("click", openTwitter);
+linkedinButton.addEventListener("click", openLinkedin);
+instaButton.addEventListener("click", openInstagram);
+githubButton.addEventListener("click", openGithub);

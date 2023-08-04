@@ -106,6 +106,7 @@ body.light1 {
     text-align: center;
     margin-left: 0;
     user-select: none;
+    word-wrap: break-word;
 }
 
 @keyframes text {

@@ -5,6 +5,7 @@ let instaButton = document.getElementById("instagram");
 let githubButton = document.getElementById("github");
 let twiterButton = document.getElementById("twitter");
 let linkedinButton = document.getElementById("linkedin");
+let loading = document.getElementById("loading");
 
 function toggle() {
     if(body.classList.contains("dark1")) {
@@ -47,3 +48,16 @@ twiterButton.addEventListener("click", openTwitter);
 linkedinButton.addEventListener("click", openLinkedin);
 instaButton.addEventListener("click", openInstagram);
 githubButton.addEventListener("click", openGithub);
+
+//exibe o carregamento
+function load() {
+    loading.classList.add("active")
+}
+
+//fecha o carregamento
+function closeLoad() {
+    loading.classList.remove("active");
+}
+
+load();
+setTimeout(closeLoad, 2000);

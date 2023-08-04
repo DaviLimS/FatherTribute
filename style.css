@@ -10,7 +10,7 @@ body {
 body.dark1 {
     animation-name: darkest;
     animation-duration: 2s;
-    background-color: rgb(26, 26, 26);
+    background-color: rgb(56, 56, 56);
     color: white;
 }
 
@@ -21,7 +21,7 @@ body.dark1 {
     }
 
     to {
-        background-color: rgb(26, 26, 26);
+        background-color: rgb(56, 56, 56);
         color: white;
     }
 }
@@ -35,7 +35,7 @@ body.light1 {
 
 @keyframes brightness {
     from {
-        background-color: rgb(22, 22, 22);
+        background-color: rgb(56, 56, 56);
         color: white;
     }
 
@@ -227,8 +227,19 @@ img {
     background-color: none;
 }
 
+.divFooterText {
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    word-wrap: break-word;
+    font-family: 'Rubik', sans-serif;
+}
+
 .divFooter {
-    margin: 30px;
+    display: flex;
+    justify-content: baseline;
 }
 
 .icons {
@@ -241,5 +252,4 @@ img {
 
 .footer {
     max-width: 100vw;
-    max-height: auto;
 }

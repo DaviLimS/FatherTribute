@@ -55,9 +55,8 @@ function load() {
 }
 
 //fecha o carregamento
-function closeLoad() {
-    loading.classList.remove("active");
-}
+window.addEventListener("load", () => {
+    loading.classList.remove("active")
+})
 
 load();
-setTimeout(closeLoad, 2000);

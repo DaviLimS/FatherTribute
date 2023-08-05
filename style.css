@@ -65,7 +65,8 @@ body.light1 {
 }
 
 #lightDark {
-    margin-right: 0;
+    margin-left: 0em;
+    margin-right: 2em;
     width: 70px;
     animation-name: tribute;
     animation-duration: 2s;
@@ -156,7 +157,6 @@ img {
 } 
 
 .card {
-    white-space: normal;
     border: 2px rgb(212, 212, 212) solid;
     display: flex;
     flex-wrap: wrap;
@@ -191,9 +191,9 @@ img {
     word-wrap: break-word;
 }
 
-@media (max-width: 700px) { 
+@media (max-width: 700px) {
     #lightDark {
-        margin-left: 30px;
+        margin-left: 4.5em;
     }
 
     .h1 {
@@ -201,24 +201,28 @@ img {
     }
 
     .card {
+        margin-left: 40px;
         border: 2px rgb(212, 212, 212) solid;
         display: flex;
         justify-content: center;
-        flex-direction: column;
-        border-radius: 20px;
         border-radius: 20px;
         margin-bottom: 7vh;
         animation-name: intro;
         animation-duration: 1.5s;
         text-align: center;
         cursor: pointer;
-        margin-left: 3.5rem;
+    }
+
+    .img {
+        display: none;
     }
 
     .card p {
         font-family: 'Borel', cursive;
         font-weight: bold;
+        font-size: small;
         word-wrap: break-word;
+        margin-right: 20px;
     }
 
     body {
@@ -235,7 +239,7 @@ img {
     }
 
     .hr2 {
-        margin-left: 4.6rem;
+        margin-left: 3rem;
     }
 }
 

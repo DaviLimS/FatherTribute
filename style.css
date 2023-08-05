@@ -150,12 +150,13 @@ body.light1 {
 }
 
 img {
-    height: 250px;
-    width: 250px;
+    height: 15em;
+    width: 15em;
     border-radius: 20px;
 } 
 
 .card {
+    white-space: normal;
     border: 2px rgb(212, 212, 212) solid;
     display: flex;
     flex-wrap: wrap;
@@ -166,6 +167,7 @@ img {
     animation-duration: 1.5s;
     overflow-y: hidden;
     cursor: pointer;
+    word-wrap: break-word;
 }
 
 @keyframes intro {
@@ -181,10 +183,12 @@ img {
 }
 
 .card p {
+    white-space: normal;
     font-family: 'Borel', cursive;
     font-weight: bold;
     margin-left: 25px;
-    font-size: 17px;
+    font-size: 0.9em;
+    word-wrap: break-word;
 }
 
 @media (max-width: 700px) { 
@@ -214,6 +218,7 @@ img {
     .card p {
         font-family: 'Borel', cursive;
         font-weight: bold;
+        word-wrap: break-word;
     }
 
     body {

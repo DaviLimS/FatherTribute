@@ -187,12 +187,20 @@ img {
     font-size: 17px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 700px) { 
+    #lightDark {
+        margin-left: 30px;
+    }
+
+    .h1 {
+        font-size: large;
+    }
+
     .card {
         border: 2px rgb(212, 212, 212) solid;
         display: flex;
         justify-content: center;
-        flex-wrap: wrap;
+        flex-direction: column;
         border-radius: 20px;
         border-radius: 20px;
         margin-bottom: 7vh;
@@ -200,12 +208,29 @@ img {
         animation-duration: 1.5s;
         text-align: center;
         cursor: pointer;
+        margin-left: 3.5rem;
     }
 
     .card p {
         font-family: 'Borel', cursive;
         font-weight: bold;
-        font-size: 14px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .h1 {
+        margin-left: 3.2rem;
+    }
+
+    .hr1 {
+        width: 100%;
+        margin-left: 1.5rem;
+    }
+
+    .hr2 {
+        margin-left: 4.6rem;
     }
 }
 
